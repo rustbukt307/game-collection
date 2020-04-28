@@ -27,7 +27,9 @@
 ```
 
 ## Wireframes: 
-### 
+### Desktop: (https://wireframe.cc/eGhPoU)
+### Tablet: (https://wireframe.cc/NBcmHH)
+### Mobile: (https://wireframe.cc/EpP2Tu)
 
 ## MVP:
 ### The app will allow users to search for titles and will provide select bits of data on the title. Users will also have the ability to save these titles to a personal library acting as an inventory, a wishlist, or just a collection of favorites.
@@ -51,7 +53,7 @@
 | 4/30 | Ensure app works, debug  | Pending  |
 
 ## Priority Matrix: 
-![PM]( "Priority Matrix")
+![PM](https://i.imgur.com/9Kn01Bc.jpg "Priority Matrix")
 
 ## Timeframes: 
 | Component                | Priority | Est. Time | Act. Time |
