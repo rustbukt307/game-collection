@@ -1,68 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project: Game Collection Builder/Manager
 
-## Available Scripts
+## App Title:
+### Game Collector's Guide
 
-In the project directory, you can run:
+## App Description:
+### To some of us, collecting games is big business. Whether you have a shelf full of the latest favorites or a collection dating back to your childhood occupying boxes in your basement my app will help with logging that collection. Information will be available that includes data on each title and will include a feature that stores your collection for future reference helping you keep a working inventory of your investment for years to come.
 
-### `npm start`
+## API:
+### https://rawg.io/apidocs
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## API Snippet: 
+```JSON{"id": 3498,
+    "slug": "grand-theft-auto-v",
+    "name": "Grand Theft Auto V",
+    "name_original": "Grand Theft Auto V",
+    "description": "<p>Rockstar Games went bigger, since their previous installment of the series. You get the complicated and realistic world-building from Liberty City of GTA4 in the setting of lively and diverse Los Santos, from an old fan favorite GTA San Andreas. 561 different vehicles (including every transport you can operate) and the amount is rising with every update. <br />\nSimultaneous storytelling from three unique perspectives: <br />\nFollow Michael, ex-criminal living his life of leisure away from the past, Franklin, a kid that seeks the better future, and Trevor, the exact past Michael is trying to run away from. <br />\nGTA Online will provide a lot of additional challenge even for the experienced players, coming fresh from the story mode. Now you will have other players around that can help you just as likely as ruin your mission. Every GTA mechanic up to date can be experienced by players through the unique customizable character, and community content paired with the leveling system tends to keep everyone busy and engaged.</p>",
+    "metacritic": 96,
+    "released": "2013-09-17",
+    "tba": false,
+    "updated": "2019-10-24T00:39:04",
+    "background_image": "https://media.rawg.io/media/games/b11/b115b2bc6a5957a917bc7601f4abdda2.jpg",
+    "background_image_additional": "https://media.rawg.io/media/screenshots/5f5/5f5a38a222252d996b18962806eed707.jpg",
+    "website": "http://www.rockstargames.com/V/",
+    "rating": 4.48,
+    "rating_top": 5,}
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Wireframes: 
+### 
 
-### `npm test`
+## MVP:
+### The app will allow users to search for titles and will provide select bits of data on the title. Users will also have the ability to save these titles to a personal library acting as an inventory, a wishlist, or just a collection of favorites.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Post-MVP:
+### Would like to incorporate a pricing guide to assist with valuing the collection. An outside API may be necessary for this.
 
-### `npm run build`
+## Goals: 
+| Day  | Goal                     | Status   |
+|:----:|:------------------------:|:--------:|
+| 4/26 | Conceptualize            | Complete |
+| 4/26 | Find suitable API        | Complete |
+| 4/27 | Create wireframe         | Complete |
+| 4/27 | Prepare project plan     | Complete |
+| 4/27 | Get approval             | Pending  |
+| 4/28 | React and JS skeleton    | Pending  |
+| 4/28 | Create components        | Pending  |
+| 4/29 | Implement API data       | Pending  |
+| 4/29 | Apply data to components | Pending  |
+| 4/30 | Apply CSS styling        | Pending  |
+| 4/30 | Ensure app works, debug  | Pending  |
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Priority Matrix: 
+![PM]( "Priority Matrix")
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Timeframes: 
+| Component                | Priority | Est. Time | Act. Time |
+|:------------------------:|:--------:|:---------:|:---------:|
+| Construction             | H        | 2 hrs     |     ?     |
+| Search Function          | H        | 3 hrs     |     ?     |
+| Calling API Data         | H        | 5 hrs     |     ?     |
+| CSS Styling              | H        | 5 hrs     |     ?     |
+| Include Collection List  | H        | 5 hrs     |     ?     |
+| Research Images: Styling | L        | 3 hrs     |     ?     |
+| Include Animations       | L        | 3 hrs     |     ?     |
+| Unforseen Debugging      | H        | 8 hrs     |     ?     |
+| Total                    |          | 34 hrs    |     ?     |
