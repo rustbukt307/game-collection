@@ -10,6 +10,7 @@ function Game(props) {
         {/* <p>{props.game.genres}</p> */}
         {/* <p>{props.game.developers}</p> */}
         {/* <p>{props.game.publishers}</p> */}
+        {/* <p>{props.game.esrb_rating}</p> */}
         <p>{props.game.website}</p>
       </div>
       

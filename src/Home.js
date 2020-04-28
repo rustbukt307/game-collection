@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 import axios from "axios"
 import Game from "./Game"
 class Home extends Component {
-
   constructor() {
     super()
     this.state = {
