@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Home from "./Home"
+import List from "./List"
+import { Route, Link } from "react-router-dom"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super()
+  }
+  render() {
+    return (
+      <div className="App" >
+        {/* move to seperate Nav component */}
+        <nav className="App-header"> 
+          <Link to="/">
+            <h1>The Player's Vault</h1>
+          </Link>
+        </nav>
+        <div>
+          <Route exact path="/">
+            <Home  />
+          </Route>
+          {/* <Route path="/collection/:index"> */}
+            {/* <List  />
+          </Route> */}
+        </div>
+        {/* Footer component goes here */}
+      </div>
+    )
+  }
 }
-
-export default App;
+export default App
