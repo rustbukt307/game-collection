@@ -2,6 +2,7 @@ import React from 'react';
 
 function Game(props) {
   console.log(props.game)
+  if (props.game.redirect) return <h2>Did you mean {props.game.slug}?</h2>
   return (
     <>
       <div className="gameDetails">

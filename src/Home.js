@@ -34,7 +34,7 @@ class Home extends Component {
     let url = "https://api.rawg.io/api/games/"
     let input = this.state.input
     try {
-      let response = await axios.get(`${url}${input}`)
+      let response = await axios.get(`${url}${input.split(" ").join("-").toLowerCase()}`)
       this.setState({
         game: response.data
       })
