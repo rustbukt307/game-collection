@@ -10,7 +10,7 @@ function Nav() {
             <h1>The Player's Vault</h1>
           </Link>
           <Link to="/collection">
-            <button>View Collection</button>
+            <button className="collection">View Collection</button>
           </Link>
         </nav>
     </div>

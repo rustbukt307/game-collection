@@ -6,12 +6,28 @@ body {
 
 h1 {
   color:  rgb(237, 68, 197);
+  /* font-family: ; */
   text-decoration: none;
   font-size: 32px;
-}
+  margin: 35px;
+  }
 
 Nav {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.collection {
+  margin: 40px;
+}
+
+button, input {
+  margin: 5px;
+  background-color: black;
+  color:  rgb(237, 68, 197);
+  font-size: 14px;
+  font-weight: bold;
 }
 
 form {
@@ -19,7 +35,7 @@ form {
   text-align: center;
 }
 
-.game-container {
+.game-container, .list {
   margin: 0 auto;
   background: rgb(0, 0, 0, 0.5);
   color: rgb(237, 68, 197);
@@ -47,12 +63,6 @@ form {
   
 img {
   max-width: 500px;
-}
-
-@media only screen and (max-width: 650px) {
-  section, img {
-    max-width: 500px;
-  }
 }
 
 @media only screen and (max-width: 650px) {
