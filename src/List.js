@@ -3,22 +3,28 @@ import { withRouter } from "react-router-dom"
 import { Link } from "react-router-dom"
 import "./App.css"
 
-
-class List extends Component {
-  handleClick = (e) => {
-    const index = parseInt(this.props.match.params.index)
-    window.location.replace(this.props.birds[index].homepage)
+function List() {
+  let myFavs = []
+  if (localStorage && localStorage["myFavs"]) {
+    myFavs = JSON.parse(localStorage["myFavs"])
+  }
+  
+  function formatName(game) {
+    return game.split("-").join(" ")
   }
 
-  render() {
-
-    const index = (parseInt(this.props.match.params.index))
-    return (
-      <div className="list">
-        <h1 style={{textAlign: "center"}}>Coming Soon!</h1>
-      </div>
-    )
-  }
+  return (
+    <div>
+      <ul>
+        {myFavs.map(game => {
+          return (
+            <Link className="fav-list" to={`/game/${game}`}>{formatName(game)}</Link>
+          )
+        })}
+      </ul>
+    </div>
+  )
+  
 }
 
 export default withRouter(List)

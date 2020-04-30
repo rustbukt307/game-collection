@@ -3,11 +3,12 @@ import { Link } from "react-router-dom"
 import "./App.css"
 
 function Nav() {
+  
   return (
     <div>
       <nav className="App-header"> 
           <Link to="/">
-            <h1>The Player's Vault</h1>
+            <h1>THE PLAYER'S VAULT</h1>
           </Link>
           <Link to="/collection">
             <button className="collection">View Collection</button>
@@ -17,4 +18,4 @@ function Nav() {
   )
 }
 
-export default Nav;
+export default Nav

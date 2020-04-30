@@ -1,13 +1,32 @@
 import React from 'react';
 import "./App.css"
 
+let store = []
+
 function Game(props) {
-  console.log(props.game)
+  if (localStorage["myFavs"]) {
+    store = localStorage["myFavs"]
+  }
+  
   if (props.game.redirect) return <h2>Did you mean {props.game.slug}?</h2>
+
+  function addToFav() {
+    let game = props.game.slug
+    if (localStorage) {
+      let myFavs
+      if (!localStorage["myFavs"]) myFavs = []
+      else myFavs = JSON.parse(localStorage["myFavs"])
+      if (!myFavs.includes(game)) myFavs.push(game)
+      localStorage.setItem("myFavs", JSON.stringify(myFavs))
+    }
+  }
+
   return (
-    // Some items repeat or crash the page if they have a null value
     <div className="game-container">
       <div className="game-details">
+        <button className="add" onClick={addToFav}>
+          Add to Collection
+        </button>
         <p>Released: {props.game.released}</p>
         {props.game.parent_platforms.map(platform => {
           return<p>Play on: {platform.platform.name}</p>
@@ -18,11 +37,12 @@ function Game(props) {
         {props.game.developers.map(developers => {
           return<p>Developer: {developers.name}</p>
         })}
-        {/* {props.game.publishers.map(publishers => {
-          return<p>Publisher: {publishers.name}</p>
-        })} */}
-        {/* <p>ESRB Rating: {props.game.esrb_rating.name}</p> */}
-        <p>{props.game.website}</p>
+        {props.game.publishers.map(publishers => {
+          if (publishers.name){
+            return <p>Publisher: {publishers.name}</p>
+          }})}
+        {props.game.esrb_rating && <p>ESRB Rating: {props.game.esrb_rating.name}</p>}
+        <a href={props.game.website}>{props.game.website}</a>
       </div>
       
       <div className="game-info">
@@ -38,4 +58,4 @@ function Game(props) {
   )
 }
 
-export default Game;
+export default Game
