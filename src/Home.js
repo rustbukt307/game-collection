@@ -55,7 +55,7 @@ class Home extends Component {
           <input value={this.state.input} onChange={this.handleInputChange}/>
           <button>Search</button>
         </form>
-        {this.state.game && <Game game={this.state.game}/>}
+        {this.state.game && <Game game={this.state.game} />}
       </div>
     )
   }

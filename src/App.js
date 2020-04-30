@@ -22,7 +22,7 @@ class App extends Component {
           </Route>
         </div>
         <footer>
-          Powered by RAWG | Design and Development by Tom Moliterno
+          Design and Development by Tom Moliterno 2020 | Powered by RAWG API
         </footer>
       </div>
     )
