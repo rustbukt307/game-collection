@@ -23,6 +23,12 @@ function Game(props) {
 
   return (
     <div className="game-container">
+
+      <div className="game-info">
+        <h2>{props.game.name_original}</h2>
+        <p>{props.game.description_raw}</p>
+      </div>
+
       <div className="game-details">
         <button className="add" onClick={addToFav}>
           Add to Collection
@@ -45,11 +51,6 @@ function Game(props) {
         <a href={props.game.website}>{props.game.website}</a>
       </div>
       
-      <div className="game-info">
-        <h2>{props.game.name_original}</h2>
-        <p>About: {props.game.description_raw}</p>
-      </div>
-    
       <div className="game-images">
         <img src={props.game.background_image} />
         <img src={props.game.background_image_additional} />
