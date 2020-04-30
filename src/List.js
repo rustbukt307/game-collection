@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom"
 import { Link } from "react-router-dom"
+import "./App.css"
 
 
 class List extends Component {
@@ -13,7 +14,7 @@ class List extends Component {
     const index = (parseInt(this.props.match.params.index))
     return (
       <div className="list">
-        <img src={this.props.birds[index].image}></img>
+        {/* <img src={this.props.birds[index].image}></img>
         <div className="birdInfo">
           <h2>{this.props.birds[index].name}</h2>
           <p>({this.props.birds[index].genus})</p>
@@ -21,7 +22,7 @@ class List extends Component {
           <Link>
             <button onClick={this.handleClick} type="button"><strong>Read More</strong></button>
           </Link>
-        </div>
+        </div> */}
       </div>
     )
   }

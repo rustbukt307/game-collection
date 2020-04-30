@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom"
 import axios from "axios"
 import Game from "./Game"
+import "./App.css"
+
 class Home extends Component {
   constructor() {
     super()
@@ -12,15 +14,11 @@ class Home extends Component {
     }
   }
 
-  // let valueArray = value.split(' ') //removes spaces in search bar
-  // value = valueArray.join('-') //inserts a dash which the API requires
-  // value = value.toLowerCase() //removes uppercase characters so names are properly input into the URL
-
   async componentDidMount() {
     let url = "https://api.rawg.io/api/games/"
     let input = this.state.input
     try {
-      let response = await axios.get(`${url}rtype`)
+      let response = await axios.get(`${url}r-type`)
       this.setState({
         game: response.data
       })

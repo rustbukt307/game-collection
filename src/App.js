@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import Nav from "./Nav"
 import Home from "./Home"
 import List from "./List"
-import { Route, Link } from "react-router-dom"
+import { Route } from "react-router-dom"
+import "./App.css"
 
 class App extends Component {
   constructor() {
@@ -10,23 +12,21 @@ class App extends Component {
   render() {
     return (
       <div className="App" >
-        {/* move to seperate Nav component */}
-        <nav className="App-header"> 
-          <Link to="/">
-            <h1>The Player's Vault</h1>
-          </Link>
-        </nav>
+        <Nav/>
         <div>
           <Route exact path="/">
             <Home  />
           </Route>
-          {/* <Route path="/collection/:index"> */}
-            {/* <List  />
-          </Route> */}
+          <Route path="/collection">
+            <List  />
+          </Route>
         </div>
-        {/* Footer component goes here */}
+        <footer>
+          Powered by RAWG | Design and Development by Tom Moliterno
+        </footer>
       </div>
     )
   }
 }
+
 export default App
