@@ -1,7 +1,7 @@
 # Project: Game Collection Builder/Manager
 
 ## App Title:
-### Game Collector's Guide
+### The Player's Vault
 
 ## App Description:
 ### To some of us, collecting games is big business. Whether you have a shelf full of the latest favorites or a collection dating back to your childhood occupying boxes in your basement my app will help with logging that collection. Information will be available that includes data on each title and will include a feature that stores your collection for future reference helping you keep a working inventory of your investment for years to come.
@@ -44,13 +44,13 @@
 | 4/26 | Find suitable API        | Complete |
 | 4/27 | Create wireframe         | Complete |
 | 4/27 | Prepare project plan     | Complete |
-| 4/27 | Get approval             | Pending  |
-| 4/28 | React and JS skeleton    | Pending  |
-| 4/28 | Create components        | Pending  |
-| 4/29 | Implement API data       | Pending  |
-| 4/29 | Apply data to components | Pending  |
-| 4/30 | Apply CSS styling        | Pending  |
-| 4/30 | Ensure app works, debug  | Pending  |
+| 4/27 | Get approval             | Complete |
+| 4/28 | React and JS skeleton    | Complete |
+| 4/28 | Create components        | Complete |
+| 4/29 | Implement API data       | Complete |
+| 4/29 | Apply data to components | Complete |
+| 4/30 | Apply CSS styling        | Complete |
+| 4/30 | Ensure app works, debug  | Complete |
 
 ## Priority Matrix: 
 ![PM](https://i.imgur.com/9Kn01Bc.jpg "Priority Matrix")
@@ -58,12 +58,12 @@
 ## Timeframes: 
 | Component                | Priority | Est. Time | Act. Time |
 |:------------------------:|:--------:|:---------:|:---------:|
-| Construction             | H        | 2 hrs     |     ?     |
-| Search Function          | H        | 3 hrs     |     ?     |
-| Calling API Data         | H        | 5 hrs     |     ?     |
-| CSS Styling              | H        | 5 hrs     |     ?     |
-| Include Collection List  | H        | 5 hrs     |     ?     |
-| Research Images: Styling | L        | 3 hrs     |     ?     |
-| Include Animations       | L        | 3 hrs     |     ?     |
-| Unforseen Debugging      | H        | 8 hrs     |     ?     |
-| Total                    |          | 34 hrs    |     ?     |
+| Construction             | H        | 2 hrs     | 4 hrs     |
+| Search Function          | H        | 3 hrs     | 2 hrs     |
+| Calling API Data         | H        | 5 hrs     | 5 hrs     |
+| CSS Styling              | H        | 5 hrs     | 8 hrs     |
+| Include Collection List  | H        | 5 hrs     | 8 hrs     |
+| Research Images: Styling | L        | 3 hrs     | 1 hr      |
+| Include Animations       | L        | 3 hrs     | 0 hrs     |
+| Unforseen Debugging      | H        | 8 hrs     | 10 hrs    |
+| Total                    |          | 34 hrs    | 38 hrs    |
