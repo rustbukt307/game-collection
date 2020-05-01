@@ -1,5 +1,7 @@
 # Project: Game Collection Builder/Manager
 
+## Live Link: (https://rustbukt307-game-collection.netlify.app/)
+
 ## App Title:
 ### The Player's Vault
 
@@ -7,7 +9,7 @@
 ### To some of us, collecting games is big business. Whether you have a shelf full of the latest favorites or a collection dating back to your childhood occupying boxes in your basement my app will help with logging that collection. Information will be available that includes data on each title and will include a feature that stores your collection for future reference helping you keep a working inventory of your investment for years to come.
 
 ## API:
-### https://rawg.io/apidocs
+### (https://rawg.io/apidocs)
 
 ## API Snippet: 
 ```JSON{"id": 3498,
