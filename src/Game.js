@@ -1,5 +1,6 @@
 import React from 'react';
 import "./App.css"
+import Button from "./Button"
 
 let store = []
 
@@ -30,9 +31,7 @@ function Game(props) {
       </div>
 
       <div className="game-details">
-        <button className="add" onClick={addToFav}>
-          Add to Collection
-        </button>
+        <Button addToFav={addToFav} text="Add to Collection"/>
         <p>Released: {props.game.released}</p>
         {props.game.parent_platforms.map(platform => {
           return<p>Play on: {platform.platform.name}</p>
