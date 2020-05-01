@@ -96,4 +96,11 @@ footer {
   section, img {
     max-width: 50%;
   }
+  Nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  h1 {
+    margin: 15px;
+  }
 }
